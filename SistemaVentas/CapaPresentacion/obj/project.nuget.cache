@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r0PPnqyqwE4NIWhcDdQcdngtj4+ia1B7yR9K7uF4IfquW+lQwMlg0yhMg2jxb1Dgtog81xXR5E7nqYUZWmMCkA==",
+  "dgSpecHash": "s63409DnwWrrO2naR0rWOJG6D9TgxqFeJJbDDieVMBnJnZS3S26kI3AOf+5UR7aBZ+ENfbhfuQaxRQADlrunJQ==",
   "success": true,
-  "projectFilePath": "C:\\SistemaDeVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
+  "projectFilePath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\fontawesome.sharp\\6.6.0\\fontawesome.sharp.6.6.0.nupkg.sha512"
   ],

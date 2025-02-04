@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SistemaDeVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj": {}
+    "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj": {}
   },
   "projects": {
-    "C:\\SistemaDeVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj": {
+    "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SistemaDeVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
+        "projectUniqueName": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
         "projectName": "CapaPresentacion",
-        "projectPath": "C:\\SistemaDeVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
+        "projectPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
         "packagesPath": "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\",
-        "outputPath": "C:\\SistemaDeVentas\\SistemaVentas\\CapaPresentacion\\obj\\",
+        "outputPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
