@@ -2,8 +2,10 @@ C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\bin\Debug\CapaNegocio.pdb
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\bin\Debug\CapaDatos.dll
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\bin\Debug\CapaDatos.pdb
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
