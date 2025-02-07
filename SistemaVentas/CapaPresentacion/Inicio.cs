@@ -1,6 +1,6 @@
 using CapaEntidad;
 using FontAwesome.Sharp;
-using CapaNegocio; 
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
@@ -12,10 +12,12 @@ namespace CapaPresentacion
         private static Form FormularioActivo = null;
 
 
-        public Inicio(Usuario objusuario)
+        public Inicio(Usuario objusuario = null)
         {
-
-            usuarioActual = objusuario;
+            if (objusuario == null)
+                usuarioActual = new Usuario() { NombreCompleto = "ADMIN PREDEFINIDO", IdUsuario = 1 };
+            else
+                usuarioActual = objusuario;
 
             InitializeComponent();
         }
@@ -31,7 +33,7 @@ namespace CapaPresentacion
 
             foreach (IconMenuItem iconmenu in menu.Items)
             {
-                bool encontrado = ListaPermisos.Any(m => m.NombreMenu == iconmenu.Name); 
+                bool encontrado = ListaPermisos.Any(m => m.NombreMenu == iconmenu.Name);
 
                 if (encontrado == false)
                 {
