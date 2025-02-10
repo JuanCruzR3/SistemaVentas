@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -248,6 +248,7 @@
             btnlimpiar.TextAlign = ContentAlignment.MiddleRight;
             btnlimpiar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnlimpiar.UseVisualStyleBackColor = false;
+            btnlimpiar.Click += btnlimpiar_Click;
             // 
             // btneliminar
             // 
@@ -268,6 +269,7 @@
             btneliminar.TextAlign = ContentAlignment.MiddleRight;
             btneliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btneliminar.UseVisualStyleBackColor = false;
+            btneliminar.Click += btneliminar_Click;
             // 
             // label9
             // 
@@ -284,24 +286,24 @@
             // dgvdata
             // 
             dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Control;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvdata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvdata.Columns.AddRange(new DataGridViewColumn[] { btnseleccionar, Id, Documento, NombreCompleto, Correo, Clave, IdRol, Rol, EstadoValor, Estado });
             dgvdata.Location = new Point(269, 95);
             dgvdata.MultiSelect = false;
             dgvdata.Name = "dgvdata";
             dgvdata.ReadOnly = true;
-            dataGridViewCellStyle4.SelectionBackColor = Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dgvdata.RowTemplate.Height = 28;
             dgvdata.Size = new Size(842, 406);
             dgvdata.TabIndex = 19;
@@ -379,9 +381,11 @@
             // label10
             // 
             label10.BackColor = Color.White;
+            label10.BorderStyle = BorderStyle.FixedSingle;
             label10.Font = new Font("Verdana", 15.75F, FontStyle.Italic, GraphicsUnit.Point);
             label10.Location = new Point(269, 22);
             label10.Name = "label10";
+            label10.Padding = new Padding(2, 0, 0, 0);
             label10.Size = new Size(842, 61);
             label10.TabIndex = 20;
             label10.Text = "Lista de Usuarios";
@@ -394,6 +398,7 @@
             txtid.Size = new Size(25, 23);
             txtid.TabIndex = 21;
             txtid.Text = "0";
+            txtid.Visible = false;
             // 
             // label11
             // 
@@ -438,6 +443,7 @@
             btnlimpiarbuscador.TabIndex = 26;
             btnlimpiarbuscador.TextAlign = ContentAlignment.MiddleRight;
             btnlimpiarbuscador.UseVisualStyleBackColor = false;
+            btnlimpiarbuscador.Click += btnlimpiarbuscador_Click;
             // 
             // btnbuscar
             // 
@@ -455,6 +461,7 @@
             btnbuscar.Size = new Size(44, 23);
             btnbuscar.TabIndex = 25;
             btnbuscar.UseVisualStyleBackColor = false;
+            btnbuscar.Click += btnbuscar_Click;
             // 
             // txtindice
             // 
@@ -463,6 +470,7 @@
             txtindice.Size = new Size(25, 23);
             txtindice.TabIndex = 27;
             txtindice.Text = "-1";
+            txtindice.Visible = false;
             // 
             // frmUsuarios
             // 
