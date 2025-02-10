@@ -134,10 +134,6 @@ namespace CapaPresentacion
                     MessageBox.Show(mensaje);
                 }
             }
-
-
-
-
         }
 
         private void Limpiar()
@@ -273,7 +269,7 @@ namespace CapaPresentacion
 
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
-
+            Limpiar(); 
         }
     }
 }
