@@ -42,3 +42,11 @@ C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.frmDetalleCompra.resources
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.frmDetalleVenta.resources
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.Properties.Resources.resources
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\ClosedXML.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\ClosedXML.Parser.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\ExcelNumberFormat.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\RBush.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\SixLabors.Fonts.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\System.IO.Packaging.dll

@@ -66,6 +66,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            btnexpotar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)dgvdata).BeginInit();
             SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             btnbuscar.IconColor = Color.Black;
             btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnbuscar.IconSize = 16;
-            btnbuscar.Location = new Point(960, 43);
+            btnbuscar.Location = new Point(1086, 56);
             btnbuscar.Name = "btnbuscar";
             btnbuscar.Size = new Size(44, 23);
             btnbuscar.TabIndex = 53;
@@ -90,6 +91,7 @@
             // dgvdata
             // 
             dgvdata.AllowUserToAddRows = false;
+            dgvdata.BackgroundColor = Color.White;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -101,7 +103,7 @@
             dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvdata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvdata.Columns.AddRange(new DataGridViewColumn[] { btnseleccionar, Id, Codigo, Nombre, Descripcion, IdCategoria, Categoria, Stock, PrecioCompra, PrecioVenta, EstadoValor, Estado });
-            dgvdata.Location = new Point(268, 104);
+            dgvdata.Location = new Point(268, 131);
             dgvdata.MultiSelect = false;
             dgvdata.Name = "dgvdata";
             dgvdata.ReadOnly = true;
@@ -203,7 +205,7 @@
             btnlimpiarbuscador.IconColor = Color.Black;
             btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnlimpiarbuscador.IconSize = 18;
-            btnlimpiarbuscador.Location = new Point(1010, 43);
+            btnlimpiarbuscador.Location = new Point(1136, 56);
             btnlimpiarbuscador.Name = "btnlimpiarbuscador";
             btnlimpiarbuscador.Size = new Size(38, 23);
             btnlimpiarbuscador.TabIndex = 54;
@@ -213,16 +215,17 @@
             // 
             // txtbusqueda
             // 
-            txtbusqueda.Location = new Point(773, 44);
+            txtbusqueda.Location = new Point(899, 57);
             txtbusqueda.Name = "txtbusqueda";
             txtbusqueda.Size = new Size(181, 23);
             txtbusqueda.TabIndex = 52;
             // 
             // cbobusqueda
             // 
+            cbobusqueda.BackColor = SystemColors.Control;
             cbobusqueda.DropDownStyle = ComboBoxStyle.DropDownList;
             cbobusqueda.FormattingEnabled = true;
-            cbobusqueda.Location = new Point(639, 44);
+            cbobusqueda.Location = new Point(765, 57);
             cbobusqueda.Name = "cbobusqueda";
             cbobusqueda.Size = new Size(128, 23);
             cbobusqueda.TabIndex = 51;
@@ -231,7 +234,7 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.White;
-            label11.Location = new Point(567, 49);
+            label11.Location = new Point(693, 62);
             label11.Name = "label11";
             label11.Size = new Size(66, 15);
             label11.TabIndex = 50;
@@ -251,13 +254,12 @@
             label10.BackColor = Color.White;
             label10.BorderStyle = BorderStyle.FixedSingle;
             label10.Font = new Font("Verdana", 15.75F, FontStyle.Italic, GraphicsUnit.Point);
-            label10.Location = new Point(268, 20);
+            label10.Location = new Point(268, 9);
             label10.Name = "label10";
-            label10.Padding = new Padding(3, 0, 0, 0);
-            label10.Size = new Size(813, 61);
+            label10.Padding = new Padding(3, 6, 0, 0);
+            label10.Size = new Size(919, 89);
             label10.TabIndex = 48;
             label10.Text = "Lista de Productos";
-            label10.TextAlign = ContentAlignment.MiddleLeft;
             label10.Click += label10_Click;
             // 
             // txtindice
@@ -441,14 +443,35 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(253, 601);
+            label1.Size = new Size(253, 617);
             label1.TabIndex = 28;
+            // 
+            // btnexpotar
+            // 
+            btnexpotar.BackColor = SystemColors.Control;
+            btnexpotar.Cursor = Cursors.Hand;
+            btnexpotar.FlatAppearance.BorderColor = Color.Black;
+            btnexpotar.FlatStyle = FlatStyle.Flat;
+            btnexpotar.ForeColor = Color.Black;
+            btnexpotar.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
+            btnexpotar.IconColor = Color.LimeGreen;
+            btnexpotar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnexpotar.IconSize = 16;
+            btnexpotar.ImageAlign = ContentAlignment.MiddleLeft;
+            btnexpotar.Location = new Point(280, 62);
+            btnexpotar.Name = "btnexpotar";
+            btnexpotar.Size = new Size(131, 23);
+            btnexpotar.TabIndex = 56;
+            btnexpotar.Text = "Descargar Excel";
+            btnexpotar.UseVisualStyleBackColor = false;
+            btnexpotar.Click += btnexpotar_Click;
             // 
             // frmProducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1199, 601);
+            ClientSize = new Size(1257, 617);
+            Controls.Add(btnexpotar);
             Controls.Add(btnbuscar);
             Controls.Add(dgvdata);
             Controls.Add(btnlimpiarbuscador);
@@ -519,5 +542,6 @@
         private DataGridViewTextBoxColumn PrecioVenta;
         private DataGridViewTextBoxColumn EstadoValor;
         private DataGridViewTextBoxColumn Estado;
+        private FontAwesome.Sharp.IconButton btnexpotar;
     }
 }
