@@ -29,8 +29,6 @@ namespace CapaPresentacion
             cboestado.ValueMember = "Valor";
             cboestado.SelectedIndex = 0;
 
-            List<Rol> listarol = new CN_Rol().Listar();
-
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
                 if (columna.Visible == true && columna.Name != "btnseleccionar")
