@@ -286,10 +286,10 @@ namespace CapaPresentacion
             if (dgvdata.Rows.Count < 1)
             {
                 MessageBox.Show("No hay datos para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            } 
+            }
             else
             {
-                DataTable dt = new DataTable(); 
+                DataTable dt = new DataTable();
                 foreach (DataGridViewColumn columna in dgvdata.Columns)
                 {
                     if (columna.HeaderText != "")

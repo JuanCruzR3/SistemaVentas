@@ -81,7 +81,7 @@
             btnbuscar.IconColor = Color.Black;
             btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnbuscar.IconSize = 16;
-            btnbuscar.Location = new Point(1086, 56);
+            btnbuscar.Location = new Point(1053, 56);
             btnbuscar.Name = "btnbuscar";
             btnbuscar.Size = new Size(44, 23);
             btnbuscar.TabIndex = 53;
@@ -111,7 +111,7 @@
             dataGridViewCellStyle2.SelectionForeColor = Color.Black;
             dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dgvdata.RowTemplate.Height = 28;
-            dgvdata.Size = new Size(919, 434);
+            dgvdata.Size = new Size(919, 391);
             dgvdata.TabIndex = 47;
             dgvdata.CellContentClick += dgvdata_CellContentClick;
             dgvdata.CellPainting += dgvdata_CellPainting;
@@ -205,7 +205,7 @@
             btnlimpiarbuscador.IconColor = Color.Black;
             btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnlimpiarbuscador.IconSize = 18;
-            btnlimpiarbuscador.Location = new Point(1136, 56);
+            btnlimpiarbuscador.Location = new Point(1103, 56);
             btnlimpiarbuscador.Name = "btnlimpiarbuscador";
             btnlimpiarbuscador.Size = new Size(38, 23);
             btnlimpiarbuscador.TabIndex = 54;
@@ -215,7 +215,7 @@
             // 
             // txtbusqueda
             // 
-            txtbusqueda.Location = new Point(899, 57);
+            txtbusqueda.Location = new Point(866, 57);
             txtbusqueda.Name = "txtbusqueda";
             txtbusqueda.Size = new Size(181, 23);
             txtbusqueda.TabIndex = 52;
@@ -225,7 +225,7 @@
             cbobusqueda.BackColor = SystemColors.Control;
             cbobusqueda.DropDownStyle = ComboBoxStyle.DropDownList;
             cbobusqueda.FormattingEnabled = true;
-            cbobusqueda.Location = new Point(765, 57);
+            cbobusqueda.Location = new Point(732, 57);
             cbobusqueda.Name = "cbobusqueda";
             cbobusqueda.Size = new Size(128, 23);
             cbobusqueda.TabIndex = 51;
@@ -234,7 +234,7 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.White;
-            label11.Location = new Point(693, 62);
+            label11.Location = new Point(660, 62);
             label11.Name = "label11";
             label11.Size = new Size(66, 15);
             label11.TabIndex = 50;

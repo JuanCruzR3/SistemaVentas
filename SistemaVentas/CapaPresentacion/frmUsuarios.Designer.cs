@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -287,26 +287,26 @@
             // 
             dgvdata.AllowUserToAddRows = false;
             dgvdata.BackgroundColor = Color.White;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvdata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvdata.Columns.AddRange(new DataGridViewColumn[] { btnseleccionar, Id, Documento, NombreCompleto, Correo, Clave, IdRol, Rol, EstadoValor, Estado });
             dgvdata.Location = new Point(269, 95);
             dgvdata.MultiSelect = false;
             dgvdata.Name = "dgvdata";
             dgvdata.ReadOnly = true;
-            dataGridViewCellStyle2.SelectionBackColor = Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
-            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.SelectionBackColor = Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dgvdata.RowTemplate.Height = 28;
-            dgvdata.Size = new Size(842, 406);
+            dgvdata.Size = new Size(859, 406);
             dgvdata.TabIndex = 19;
             dgvdata.CellContentClick += dgvdata_CellContentClick;
             dgvdata.CellPainting += dgvdata_CellPainting;
@@ -387,7 +387,7 @@
             label10.Location = new Point(269, 22);
             label10.Name = "label10";
             label10.Padding = new Padding(2, 0, 0, 0);
-            label10.Size = new Size(842, 61);
+            label10.Size = new Size(859, 61);
             label10.TabIndex = 20;
             label10.Text = "Lista de Usuarios";
             label10.TextAlign = ContentAlignment.MiddleLeft;
@@ -405,7 +405,7 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.White;
-            label11.Location = new Point(568, 51);
+            label11.Location = new Point(611, 51);
             label11.Name = "label11";
             label11.Size = new Size(66, 15);
             label11.TabIndex = 22;
@@ -415,14 +415,14 @@
             // 
             cbobusqueda.DropDownStyle = ComboBoxStyle.DropDownList;
             cbobusqueda.FormattingEnabled = true;
-            cbobusqueda.Location = new Point(640, 46);
+            cbobusqueda.Location = new Point(683, 46);
             cbobusqueda.Name = "cbobusqueda";
             cbobusqueda.Size = new Size(128, 23);
             cbobusqueda.TabIndex = 23;
             // 
             // txtbusqueda
             // 
-            txtbusqueda.Location = new Point(774, 46);
+            txtbusqueda.Location = new Point(817, 46);
             txtbusqueda.Name = "txtbusqueda";
             txtbusqueda.Size = new Size(181, 23);
             txtbusqueda.TabIndex = 24;
@@ -438,7 +438,7 @@
             btnlimpiarbuscador.IconColor = Color.Black;
             btnlimpiarbuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnlimpiarbuscador.IconSize = 18;
-            btnlimpiarbuscador.Location = new Point(1011, 45);
+            btnlimpiarbuscador.Location = new Point(1054, 45);
             btnlimpiarbuscador.Name = "btnlimpiarbuscador";
             btnlimpiarbuscador.Size = new Size(38, 23);
             btnlimpiarbuscador.TabIndex = 26;
@@ -457,7 +457,7 @@
             btnbuscar.IconColor = Color.Black;
             btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnbuscar.IconSize = 16;
-            btnbuscar.Location = new Point(961, 45);
+            btnbuscar.Location = new Point(1004, 45);
             btnbuscar.Name = "btnbuscar";
             btnbuscar.Size = new Size(44, 23);
             btnbuscar.TabIndex = 25;
@@ -478,7 +478,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1151, 541);
+            ClientSize = new Size(1199, 541);
             Controls.Add(txtindice);
             Controls.Add(btnlimpiarbuscador);
             Controls.Add(btnbuscar);

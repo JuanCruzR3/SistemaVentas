@@ -106,7 +106,7 @@
             dataGridViewCellStyle2.SelectionForeColor = Color.Black;
             dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dgvdata.RowTemplate.Height = 28;
-            dgvdata.Size = new Size(842, 406);
+            dgvdata.Size = new Size(806, 406);
             dgvdata.TabIndex = 47;
             dgvdata.CellContentClick += dgvdata_CellContentClick;
             dgvdata.CellPainting += dgvdata_CellPainting;
@@ -227,7 +227,7 @@
             label10.Location = new Point(273, 24);
             label10.Name = "label10";
             label10.Padding = new Padding(2, 0, 0, 0);
-            label10.Size = new Size(842, 61);
+            label10.Size = new Size(806, 61);
             label10.TabIndex = 48;
             label10.Text = "Lista de Clientes";
             label10.TextAlign = ContentAlignment.MiddleLeft;
@@ -418,7 +418,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1197, 564);
+            ClientSize = new Size(1178, 564);
             Controls.Add(btnbuscar);
             Controls.Add(dgvdata);
             Controls.Add(btnlimpiarbuscador);

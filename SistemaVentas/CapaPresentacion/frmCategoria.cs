@@ -215,7 +215,7 @@ namespace CapaPresentacion
 
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
-            Limpiar(); 
+            Limpiar();
         }
     }
 }
