@@ -51,3 +51,5 @@ C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\SixLabors.Fonts.dll
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\System.IO.Packaging.dll
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.frmNegocio.resources
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.Modales.mdProveedor.resources
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.Modales.mdProducto.resources

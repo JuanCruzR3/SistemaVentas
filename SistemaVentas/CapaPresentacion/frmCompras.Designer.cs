@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             label2 = new Label();
             groupBox1 = new GroupBox();
@@ -182,23 +182,26 @@
             btnbuscarproveedor.IconColor = Color.Black;
             btnbuscarproveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnbuscarproveedor.IconSize = 16;
-            btnbuscarproveedor.Location = new Point(213, 54);
+            btnbuscarproveedor.Location = new Point(226, 54);
             btnbuscarproveedor.Name = "btnbuscarproveedor";
             btnbuscarproveedor.Size = new Size(44, 23);
             btnbuscarproveedor.TabIndex = 26;
             btnbuscarproveedor.UseVisualStyleBackColor = false;
+            btnbuscarproveedor.Click += btnbuscarproveedor_Click;
             // 
             // txtnombreproveedor
             // 
             txtnombreproveedor.Location = new Point(286, 54);
             txtnombreproveedor.Name = "txtnombreproveedor";
+            txtnombreproveedor.ReadOnly = true;
             txtnombreproveedor.Size = new Size(233, 23);
             txtnombreproveedor.TabIndex = 3;
             // 
             // txtdocproveedor
             // 
-            txtdocproveedor.Location = new Point(6, 51);
+            txtdocproveedor.Location = new Point(6, 55);
             txtdocproveedor.Name = "txtdocproveedor";
+            txtdocproveedor.ReadOnly = true;
             txtdocproveedor.Size = new Size(201, 23);
             txtdocproveedor.TabIndex = 2;
             // 
@@ -214,7 +217,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(6, 33);
+            label6.Location = new Point(6, 37);
             label6.Name = "label6";
             label6.Size = new Size(133, 15);
             label6.TabIndex = 0;
@@ -316,11 +319,13 @@
             btnbuscarproducto.Size = new Size(44, 23);
             btnbuscarproducto.TabIndex = 27;
             btnbuscarproducto.UseVisualStyleBackColor = false;
+            btnbuscarproducto.Click += btnbuscarproducto_Click;
             // 
             // txtproducto
             // 
             txtproducto.Location = new Point(224, 51);
             txtproducto.Name = "txtproducto";
+            txtproducto.ReadOnly = true;
             txtproducto.Size = new Size(226, 23);
             txtproducto.TabIndex = 3;
             // 
@@ -328,6 +333,7 @@
             // 
             txtcodproducto.Location = new Point(6, 51);
             txtcodproducto.Name = "txtcodproducto";
+            txtcodproducto.ReadOnly = true;
             txtcodproducto.Size = new Size(162, 23);
             txtcodproducto.TabIndex = 2;
             // 
@@ -367,24 +373,24 @@
             // 
             dgvdata.AllowUserToAddRows = false;
             dgvdata.BackgroundColor = Color.White;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Control;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvdata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvdata.Columns.AddRange(new DataGridViewColumn[] { IdProducto, Producto, PrecioCompra, PrecioVenta, Cantidad, Subtotal, btneliminar });
             dgvdata.Location = new Point(39, 253);
             dgvdata.MultiSelect = false;
             dgvdata.Name = "dgvdata";
             dgvdata.ReadOnly = true;
-            dataGridViewCellStyle4.SelectionBackColor = Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dgvdata.RowTemplate.Height = 28;
             dgvdata.Size = new Size(802, 250);
             dgvdata.TabIndex = 28;
