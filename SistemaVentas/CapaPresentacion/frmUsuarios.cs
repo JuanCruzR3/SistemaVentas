@@ -211,7 +211,6 @@ namespace CapaPresentacion
                 }
             }
 
-
         }
 
         private void btneliminar_Click(object sender, EventArgs e)

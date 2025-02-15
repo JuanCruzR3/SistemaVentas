@@ -295,6 +295,7 @@
             txtprecioventa.Name = "txtprecioventa";
             txtprecioventa.Size = new Size(92, 23);
             txtprecioventa.TabIndex = 28;
+            txtprecioventa.KeyPress += txtprecioventa_KeyPress;
             // 
             // txtpreciocompra
             // 
@@ -302,6 +303,7 @@
             txtpreciocompra.Name = "txtpreciocompra";
             txtpreciocompra.Size = new Size(92, 23);
             txtpreciocompra.TabIndex = 26;
+            txtpreciocompra.KeyPress += txtpreciocompra_KeyPress;
             // 
             // btnbuscarproducto
             // 
@@ -333,9 +335,9 @@
             // 
             txtcodproducto.Location = new Point(6, 51);
             txtcodproducto.Name = "txtcodproducto";
-            txtcodproducto.ReadOnly = true;
             txtcodproducto.Size = new Size(162, 23);
             txtcodproducto.TabIndex = 2;
+            txtcodproducto.KeyDown += txtcodproducto_KeyDown;
             // 
             // label7
             // 
@@ -368,6 +370,7 @@
             btnagregarproducto.Text = "Agregar";
             btnagregarproducto.TextImageRelation = TextImageRelation.ImageAboveText;
             btnagregarproducto.UseVisualStyleBackColor = false;
+            btnagregarproducto.Click += btnagregarproducto_Click;
             // 
             // dgvdata
             // 
@@ -394,6 +397,8 @@
             dgvdata.RowTemplate.Height = 28;
             dgvdata.Size = new Size(802, 250);
             dgvdata.TabIndex = 28;
+            dgvdata.CellContentClick += dgvdata_CellContentClick;
+            dgvdata.CellPainting += dgvdata_CellPainting;
             // 
             // IdProducto
             // 
