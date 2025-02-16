@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             label1 = new Label();
             label2 = new Label();
             groupBox1 = new GroupBox();
@@ -67,8 +67,8 @@
             Subtotal = new DataGridViewTextBoxColumn();
             btneliminar = new DataGridViewButtonColumn();
             btnregistrar = new FontAwesome.Sharp.IconButton();
-            label12 = new Label();
             txttotalapagar = new TextBox();
+            label12 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -362,6 +362,7 @@
             // btnagregarproducto
             // 
             btnagregarproducto.BackColor = SystemColors.Control;
+            btnagregarproducto.Cursor = Cursors.Hand;
             btnagregarproducto.IconChar = FontAwesome.Sharp.IconChar.Plus;
             btnagregarproducto.IconColor = Color.ForestGreen;
             btnagregarproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -378,24 +379,24 @@
             // 
             dgvdata.AllowUserToAddRows = false;
             dgvdata.BackgroundColor = Color.White;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvdata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvdata.Columns.AddRange(new DataGridViewColumn[] { IdProducto, Producto, PrecioCompra, PrecioVenta, Cantidad, Subtotal, btneliminar });
             dgvdata.Location = new Point(39, 253);
             dgvdata.MultiSelect = false;
             dgvdata.Name = "dgvdata";
             dgvdata.ReadOnly = true;
-            dataGridViewCellStyle2.SelectionBackColor = Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
-            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.SelectionBackColor = Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dgvdata.RowTemplate.Height = 28;
             dgvdata.Size = new Size(802, 250);
             dgvdata.TabIndex = 28;
@@ -452,6 +453,7 @@
             // 
             // btnregistrar
             // 
+            btnregistrar.Cursor = Cursors.Hand;
             btnregistrar.IconChar = FontAwesome.Sharp.IconChar.Tag;
             btnregistrar.IconColor = SystemColors.Highlight;
             btnregistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -465,6 +467,15 @@
             btnregistrar.UseVisualStyleBackColor = true;
             btnregistrar.Click += btnregistrar_Click;
             // 
+            // txttotalapagar
+            // 
+            txttotalapagar.Location = new Point(857, 427);
+            txttotalapagar.Name = "txttotalapagar";
+            txttotalapagar.ReadOnly = true;
+            txttotalapagar.Size = new Size(100, 23);
+            txttotalapagar.TabIndex = 31;
+            txttotalapagar.Text = "0";
+            // 
             // label12
             // 
             label12.AutoSize = true;
@@ -474,15 +485,6 @@
             label12.Size = new Size(77, 15);
             label12.TabIndex = 30;
             label12.Text = "Total a Pagar:";
-            // 
-            // txttotalapagar
-            // 
-            txttotalapagar.Location = new Point(857, 427);
-            txttotalapagar.Name = "txttotalapagar";
-            txttotalapagar.ReadOnly = true;
-            txttotalapagar.Size = new Size(100, 23);
-            txttotalapagar.TabIndex = 31;
-            txttotalapagar.Text = "0";
             // 
             // frmCompras
             // 
@@ -553,7 +555,7 @@
         private DataGridViewTextBoxColumn Subtotal;
         private DataGridViewButtonColumn btneliminar;
         private FontAwesome.Sharp.IconButton btnregistrar;
-        private Label label12;
         private TextBox txttotalapagar;
+        private Label label12;
     }
 }

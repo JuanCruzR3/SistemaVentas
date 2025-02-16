@@ -57,7 +57,6 @@ namespace CapaPresentacion
                 {
                     txtdocproveedor.Select();
                 }
-
             }
         }
 

@@ -56,3 +56,4 @@ C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\itextsharp.dll
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\bin\Debug\net7.0-windows\itextsharp.xmlworker.dll
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.Modales.mdCliente.resources
