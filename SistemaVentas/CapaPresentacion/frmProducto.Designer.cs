@@ -470,7 +470,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1257, 617);
+            ClientSize = new Size(1234, 617);
             Controls.Add(btnexpotar);
             Controls.Add(btnbuscar);
             Controls.Add(dgvdata);
