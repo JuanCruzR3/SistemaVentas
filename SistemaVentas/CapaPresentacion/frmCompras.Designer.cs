@@ -170,6 +170,7 @@
             txtidproveedor.Name = "txtidproveedor";
             txtidproveedor.Size = new Size(32, 23);
             txtidproveedor.TabIndex = 25;
+            txtidproveedor.Visible = false;
             // 
             // btnbuscarproveedor
             // 
@@ -261,6 +262,7 @@
             txtidproducto.Name = "txtidproducto";
             txtidproducto.Size = new Size(32, 23);
             txtidproducto.TabIndex = 26;
+            txtidproducto.Visible = false;
             // 
             // label11
             // 
@@ -461,6 +463,7 @@
             btnregistrar.Text = "Registrar";
             btnregistrar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnregistrar.UseVisualStyleBackColor = true;
+            btnregistrar.Click += btnregistrar_Click;
             // 
             // label12
             // 
