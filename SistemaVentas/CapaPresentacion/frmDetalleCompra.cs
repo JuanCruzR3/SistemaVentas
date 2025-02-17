@@ -63,19 +63,19 @@ namespace CapaPresentacion
 
         private void btnexpotar_Click(object sender, EventArgs e)
         {
-            if(txttipodocumento.Text == "")
+            if (txttipodocumento.Text == "")
             {
                 MessageBox.Show("No se encontraron resultados", "Mansaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return; 
+                return;
             }
-            string Texto_Html = Properties.Resources.PlantillaCompra.ToString(); 
-            Negocio odatos = new CN_Negocio().ObtenerDatos(); 
+            string Texto_Html = Properties.Resources.PlantillaCompra.ToString();
+            Negocio odatos = new CN_Negocio().ObtenerDatos();
 
             Texto_Html = Texto_Html.Replace("@nombrenegocio", odatos.Nombre.ToUpper());
             Texto_Html = Texto_Html.Replace("@docnegocio", odatos.RUC);
             Texto_Html = Texto_Html.Replace("@direcnegocio", odatos.Direccion);
 
-            Texto_Html = Texto_Html.Replace("@tipodocumento", txttipodocumento.Text.ToUpper()); 
+            Texto_Html = Texto_Html.Replace("@tipodocumento", txttipodocumento.Text.ToUpper());
             Texto_Html = Texto_Html.Replace("@numerodocumento", txtnumerodocumento.Text);
 
             Texto_Html = Texto_Html.Replace("@docproveedor", txtdocproveedor.Text);
@@ -84,15 +84,15 @@ namespace CapaPresentacion
             Texto_Html = Texto_Html.Replace("@usuarioregistro", txtusuario.Text);
 
 
-            string filas = string.Empty; 
-            foreach(DataGridViewRow row in dgvdata.Rows)
+            string filas = string.Empty;
+            foreach (DataGridViewRow row in dgvdata.Rows)
             {
-                filas += "<tr>"; 
+                filas += "<tr>";
                 filas += "<td>" + row.Cells["Producto"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["PrecioCompra"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["SubTotal"].Value.ToString() + "</td>";
-                filas += "</tr>"; 
+                filas += "</tr>";
             }
             Texto_Html = Texto_Html.Replace("@filas", filas);
             Texto_Html = Texto_Html.Replace("@montototal", txtmontototal.Text);
@@ -102,18 +102,18 @@ namespace CapaPresentacion
             savefile.FileName = string.Format("Compra_{0}.pdf", txtnumerodocumento.Text);
             savefile.Filter = "Pdf Files|*.pdf";
 
-            if(savefile.ShowDialog() == DialogResult.OK)
+            if (savefile.ShowDialog() == DialogResult.OK)
             {
                 using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
                 {
-                    Document pdfDoc = new Document(PageSize.A4, 25,25,25,25);
+                    Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
 
 
                     PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
                     pdfDoc.Open();
 
                     bool obtenido = true;
-                    byte[] byteimage = new CN_Negocio().ObtenerLogo(out obtenido); 
+                    byte[] byteimage = new CN_Negocio().ObtenerLogo(out obtenido);
 
                     if (obtenido)
                     {
@@ -121,17 +121,22 @@ namespace CapaPresentacion
                         img.ScaleToFit(60, 60);
                         img.Alignment = iTextSharp.text.Image.UNDERLYING;
                         img.SetAbsolutePosition(pdfDoc.Left, pdfDoc.GetTop(51));
-                        pdfDoc.Add(img);   
+                        pdfDoc.Add(img);
                     }
                     using (StringReader sr = new StringReader(Texto_Html))
                     {
                         XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
                     }
-                    pdfDoc.Close(); 
-                    stream.Close(); 
+                    pdfDoc.Close();
+                    stream.Close();
                     MessageBox.Show("Documento Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void frmDetalleCompra_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
