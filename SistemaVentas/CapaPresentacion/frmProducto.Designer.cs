@@ -260,7 +260,6 @@
             label10.Size = new Size(919, 89);
             label10.TabIndex = 48;
             label10.Text = "Lista de Productos";
-            label10.Click += label10_Click;
             // 
             // txtindice
             // 

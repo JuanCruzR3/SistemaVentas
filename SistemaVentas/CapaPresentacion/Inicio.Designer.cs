@@ -49,6 +49,8 @@
             contenedor = new Panel();
             label2 = new Label();
             lblusuario = new Label();
+            submenureportecompras = new ToolStripMenuItem();
+            submenureporteventas = new ToolStripMenuItem();
             menu.SuspendLayout();
             SuspendLayout();
             // 
@@ -209,6 +211,7 @@
             // 
             // menureportes
             // 
+            menureportes.DropDownItems.AddRange(new ToolStripItem[] { submenureportecompras, submenureporteventas });
             menureportes.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
             menureportes.IconColor = Color.Black;
             menureportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -218,7 +221,6 @@
             menureportes.Size = new Size(65, 69);
             menureportes.Text = "Reportes";
             menureportes.TextImageRelation = TextImageRelation.ImageAboveText;
-            menureportes.Click += menureportes_Click;
             // 
             // menuacercade
             // 
@@ -287,6 +289,20 @@
             lblusuario.TabIndex = 5;
             lblusuario.Text = "lblUsuario";
             // 
+            // submenureportecompras
+            // 
+            submenureportecompras.Name = "submenureportecompras";
+            submenureportecompras.Size = new Size(180, 22);
+            submenureportecompras.Text = "Reporte Compras";
+            submenureportecompras.Click += submenureportecompras_Click;
+            // 
+            // submenureporteventas
+            // 
+            submenureporteventas.Name = "submenureporteventas";
+            submenureporteventas.Size = new Size(180, 22);
+            submenureporteventas.Text = "Reporte Ventas";
+            submenureporteventas.Click += submenureporteventas_Click;
+            // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -332,5 +348,7 @@
         private FontAwesome.Sharp.IconMenuItem submenuregistrarcompra;
         private FontAwesome.Sharp.IconMenuItem submenuverdetallecompra;
         private ToolStripMenuItem submenunegocio;
+        private ToolStripMenuItem submenureportecompras;
+        private ToolStripMenuItem submenureporteventas;
     }
 }
