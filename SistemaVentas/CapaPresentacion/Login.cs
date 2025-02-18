@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
-using CapaEntidad; 
+using CapaEntidad;
 
 namespace CapaPresentacion
 {
@@ -28,8 +28,8 @@ namespace CapaPresentacion
         {
 
             Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == txtclave.Text).FirstOrDefault();
-            
-            
+
+
             if (ousuario != null)
             {
                 Inicio form = new Inicio(ousuario);
@@ -41,7 +41,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Usuario o clave incorrecta","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                MessageBox.Show("Usuario o clave incorrecta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
 

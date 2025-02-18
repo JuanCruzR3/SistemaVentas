@@ -43,14 +43,15 @@
             menuclientes = new FontAwesome.Sharp.IconMenuItem();
             menuproveedores = new FontAwesome.Sharp.IconMenuItem();
             menureportes = new FontAwesome.Sharp.IconMenuItem();
+            submenureportecompras = new ToolStripMenuItem();
+            submenureporteventas = new ToolStripMenuItem();
             menuacercade = new FontAwesome.Sharp.IconMenuItem();
             menutitulo = new MenuStrip();
             label1 = new Label();
             contenedor = new Panel();
             label2 = new Label();
             lblusuario = new Label();
-            submenureportecompras = new ToolStripMenuItem();
-            submenureporteventas = new ToolStripMenuItem();
+            btnsalir = new FontAwesome.Sharp.IconButton();
             menu.SuspendLayout();
             SuspendLayout();
             // 
@@ -222,6 +223,20 @@
             menureportes.Text = "Reportes";
             menureportes.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
+            // submenureportecompras
+            // 
+            submenureportecompras.Name = "submenureportecompras";
+            submenureportecompras.Size = new Size(166, 22);
+            submenureportecompras.Text = "Reporte Compras";
+            submenureportecompras.Click += submenureportecompras_Click;
+            // 
+            // submenureporteventas
+            // 
+            submenureporteventas.Name = "submenureporteventas";
+            submenureporteventas.Size = new Size(166, 22);
+            submenureporteventas.Text = "Reporte Ventas";
+            submenureporteventas.Click += submenureporteventas_Click;
+            // 
             // menuacercade
             // 
             menuacercade.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
@@ -233,6 +248,7 @@
             menuacercade.Size = new Size(72, 69);
             menuacercade.Text = "Acerca De";
             menuacercade.TextImageRelation = TextImageRelation.ImageAboveText;
+            menuacercade.Click += menuacercade_Click;
             // 
             // menutitulo
             // 
@@ -289,25 +305,29 @@
             lblusuario.TabIndex = 5;
             lblusuario.Text = "lblUsuario";
             // 
-            // submenureportecompras
+            // btnsalir
             // 
-            submenureportecompras.Name = "submenureportecompras";
-            submenureportecompras.Size = new Size(180, 22);
-            submenureportecompras.Text = "Reporte Compras";
-            submenureportecompras.Click += submenureportecompras_Click;
-            // 
-            // submenureporteventas
-            // 
-            submenureporteventas.Name = "submenureporteventas";
-            submenureporteventas.Size = new Size(180, 22);
-            submenureporteventas.Text = "Reporte Ventas";
-            submenureporteventas.Click += submenureporteventas_Click;
+            btnsalir.BackColor = Color.SteelBlue;
+            btnsalir.FlatAppearance.BorderColor = Color.SteelBlue;
+            btnsalir.FlatStyle = FlatStyle.Flat;
+            btnsalir.ForeColor = Color.SteelBlue;
+            btnsalir.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            btnsalir.IconColor = Color.Firebrick;
+            btnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnsalir.IconSize = 40;
+            btnsalir.Location = new Point(1137, 8);
+            btnsalir.Name = "btnsalir";
+            btnsalir.Size = new Size(63, 47);
+            btnsalir.TabIndex = 6;
+            btnsalir.UseVisualStyleBackColor = false;
+            btnsalir.Click += btnsalir_Click;
             // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1212, 660);
+            Controls.Add(btnsalir);
             Controls.Add(lblusuario);
             Controls.Add(label2);
             Controls.Add(contenedor);
@@ -350,5 +370,6 @@
         private ToolStripMenuItem submenunegocio;
         private ToolStripMenuItem submenureportecompras;
         private ToolStripMenuItem submenureporteventas;
+        private FontAwesome.Sharp.IconButton btnsalir;
     }
 }

@@ -59,3 +59,4 @@ C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.Modales.mdCliente.resources
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.frmReporteCompras.resources
 C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.frmReporteVentas.resources
+C:\Users\Windows 10 R.O.G\Desktop\Nueva carpeta (2)\SistemaVentas\SistemaVentas\CapaPresentacion\obj\Debug\net7.0-windows\CapaPresentacion.Modales.mdAcercade.resources

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             label1 = new Label();
             label2 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -37,7 +38,10 @@
             label4 = new Label();
             btningresar = new FontAwesome.Sharp.IconButton();
             btncancelar = new FontAwesome.Sharp.IconButton();
+            label5 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -46,7 +50,7 @@
             label1.Dock = DockStyle.Left;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(206, 193);
+            label1.Size = new Size(206, 206);
             label1.TabIndex = 0;
             // 
             // label2
@@ -76,14 +80,14 @@
             // 
             // txtdocumento
             // 
-            txtdocumento.Location = new Point(246, 41);
+            txtdocumento.Location = new Point(240, 72);
             txtdocumento.Name = "txtdocumento";
             txtdocumento.Size = new Size(204, 23);
             txtdocumento.TabIndex = 3;
             // 
             // txtclave
             // 
-            txtclave.Location = new Point(246, 96);
+            txtclave.Location = new Point(240, 121);
             txtclave.Name = "txtclave";
             txtclave.PasswordChar = '*';
             txtclave.Size = new Size(204, 23);
@@ -92,7 +96,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(246, 23);
+            label3.Location = new Point(240, 54);
             label3.Name = "label3";
             label3.Size = new Size(93, 15);
             label3.TabIndex = 5;
@@ -101,7 +105,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(246, 78);
+            label4.Location = new Point(240, 103);
             label4.Name = "label4";
             label4.Size = new Size(67, 15);
             label4.TabIndex = 6;
@@ -118,7 +122,7 @@
             btningresar.IconColor = Color.White;
             btningresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btningresar.IconSize = 21;
-            btningresar.Location = new Point(227, 137);
+            btningresar.Location = new Point(221, 150);
             btningresar.Name = "btningresar";
             btningresar.Size = new Size(112, 41);
             btningresar.TabIndex = 7;
@@ -139,7 +143,7 @@
             btncancelar.IconColor = Color.White;
             btncancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btncancelar.IconSize = 21;
-            btncancelar.Location = new Point(354, 137);
+            btncancelar.Location = new Point(348, 150);
             btncancelar.Name = "btncancelar";
             btncancelar.Size = new Size(118, 41);
             btncancelar.TabIndex = 8;
@@ -149,12 +153,34 @@
             btncancelar.UseVisualStyleBackColor = false;
             btncancelar.Click += btncancelar_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(282, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(130, 21);
+            label5.TabIndex = 9;
+            label5.Text = "INICIAR SESIÓN";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(434, 9);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(67, 57);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(502, 193);
+            ClientSize = new Size(513, 206);
+            Controls.Add(pictureBox1);
+            Controls.Add(label5);
             Controls.Add(btncancelar);
             Controls.Add(btningresar);
             Controls.Add(label4);
@@ -169,6 +195,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -184,5 +211,7 @@
         private Label label4;
         private FontAwesome.Sharp.IconButton btningresar;
         private FontAwesome.Sharp.IconButton btncancelar;
+        private Label label5;
+        private PictureBox pictureBox1;
     }
 }
