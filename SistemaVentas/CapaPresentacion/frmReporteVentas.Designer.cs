@@ -54,6 +54,7 @@
             label2 = new Label();
             label1 = new Label();
             label10 = new Label();
+            btnbuscarproveedor = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)dgvdata).BeginInit();
             SuspendLayout();
             // 
@@ -293,11 +294,32 @@
             label10.TabIndex = 89;
             label10.Text = "Reporte Ventas";
             // 
+            // btnbuscarproveedor
+            // 
+            btnbuscarproveedor.BackColor = Color.White;
+            btnbuscarproveedor.Cursor = Cursors.Hand;
+            btnbuscarproveedor.FlatAppearance.BorderColor = Color.Black;
+            btnbuscarproveedor.FlatStyle = FlatStyle.Flat;
+            btnbuscarproveedor.ForeColor = Color.Black;
+            btnbuscarproveedor.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            btnbuscarproveedor.IconColor = Color.Black;
+            btnbuscarproveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnbuscarproveedor.IconSize = 16;
+            btnbuscarproveedor.Location = new Point(430, 44);
+            btnbuscarproveedor.Name = "btnbuscarproveedor";
+            btnbuscarproveedor.Size = new Size(89, 23);
+            btnbuscarproveedor.TabIndex = 104;
+            btnbuscarproveedor.Text = "Buscar";
+            btnbuscarproveedor.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnbuscarproveedor.UseVisualStyleBackColor = false;
+            btnbuscarproveedor.Click += btnbuscarproveedor_Click_1;
+            // 
             // frmReporteVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1195, 565);
+            Controls.Add(btnbuscarproveedor);
             Controls.Add(btnbuscarpor);
             Controls.Add(btnlimpiarbuscador);
             Controls.Add(txtbusqueda);
@@ -347,5 +369,6 @@
         private DataGridViewTextBoxColumn PrecioVenta;
         private DataGridViewTextBoxColumn Cantidad;
         private DataGridViewTextBoxColumn SubTotal;
+        private FontAwesome.Sharp.IconButton btnbuscarproveedor;
     }
 }

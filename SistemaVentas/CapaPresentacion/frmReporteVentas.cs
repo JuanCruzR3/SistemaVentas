@@ -34,31 +34,7 @@ namespace CapaPresentacion
 
         private void btnbuscarproveedor_Click(object sender, EventArgs e)
         {
-            List<ReporteVenta> lista = new List<ReporteVenta>();
-
-            lista = new CN_Reporte().Venta(txtfechainicio.Value.ToString(), txtfechafin.Value.ToString());
-
-            dgvdata.Rows.Clear();
-
-            foreach (ReporteVenta rv in lista)
-            {
-                dgvdata.Rows.Add(new object[]
-                {
-                    rv.FechaRegistro,
-                    rv.TipoDocumento,
-                    rv.NumeroDocumento,
-                    rv.MontoTotal,
-                    rv.UsuarioRegistro,
-                    rv.DocumentoCliente,
-                    rv.NombreCliente,
-                    rv.CodigoProducto,
-                    rv.NombreProducto,
-                    rv.Categoria,
-                    rv.PrecioVenta,
-                    rv.Cantidad,
-                    rv.SubTotal,
-                });
-            }
+            
         }
 
         private void btnbuscarpor_Click(object sender, EventArgs e)
@@ -141,6 +117,35 @@ namespace CapaPresentacion
                         MessageBox.Show("Error al generar el reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
+            }
+        }
+
+        private void btnbuscarproveedor_Click_1(object sender, EventArgs e)
+        {
+            List<ReporteVenta> lista = new List<ReporteVenta>();
+
+            lista = new CN_Reporte().Venta(txtfechainicio.Value.ToString(), txtfechafin.Value.ToString());
+
+            dgvdata.Rows.Clear();
+
+            foreach (ReporteVenta rv in lista)
+            {
+                dgvdata.Rows.Add(new object[]
+                {
+                    rv.FechaRegistro,
+                    rv.TipoDocumento,
+                    rv.NumeroDocumento,
+                    rv.MontoTotal,
+                    rv.UsuarioRegistro,
+                    rv.DocumentoCliente,
+                    rv.NombreCliente,
+                    rv.CodigoProducto,
+                    rv.NombreProducto,
+                    rv.Categoria,
+                    rv.PrecioVenta,
+                    rv.Cantidad,
+                    rv.SubTotal,
+                });
             }
         }
     }
