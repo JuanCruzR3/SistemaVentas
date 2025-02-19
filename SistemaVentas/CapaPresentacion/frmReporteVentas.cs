@@ -34,7 +34,7 @@ namespace CapaPresentacion
 
         private void btnbuscarproveedor_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnbuscarpor_Click(object sender, EventArgs e)

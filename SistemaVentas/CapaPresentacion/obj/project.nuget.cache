@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SFnO2EBlHm4kyN7VP8KFu4QJp8R4BtjFmyL2afGMZDbL0eSUk1L6BXPBJNvZZiXn2KdIqYHTSVqFuaKqnEsxVQ==",
+  "dgSpecHash": "bafMdAiA19U0DLeAxyPWbmdYhvs1/MR+hV2VgceGMgj63HFdj/tHDJ1F7I6edckpUaUQSHW0XtNC0PIvnhp0SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
+  "projectFilePath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",

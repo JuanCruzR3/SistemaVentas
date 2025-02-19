@@ -35,6 +35,13 @@
             btnexpotar = new FontAwesome.Sharp.IconButton();
             cbobuscarpor = new ComboBox();
             dgvdata = new DataGridView();
+            label4 = new Label();
+            txtfechafin = new DateTimePicker();
+            txtfechainicio = new DateTimePicker();
+            label2 = new Label();
+            label1 = new Label();
+            label10 = new Label();
+            btnbuscarproveedor = new FontAwesome.Sharp.IconButton();
             FechaRegistro = new DataGridViewTextBoxColumn();
             TipoDocumento = new DataGridViewTextBoxColumn();
             NumeroDocumento = new DataGridViewTextBoxColumn();
@@ -48,13 +55,6 @@
             PrecioVenta = new DataGridViewTextBoxColumn();
             Cantidad = new DataGridViewTextBoxColumn();
             SubTotal = new DataGridViewTextBoxColumn();
-            label4 = new Label();
-            txtfechafin = new DateTimePicker();
-            txtfechainicio = new DateTimePicker();
-            label2 = new Label();
-            label1 = new Label();
-            label10 = new Label();
-            btnbuscarproveedor = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)dgvdata).BeginInit();
             SuspendLayout();
             // 
@@ -155,84 +155,6 @@
             dgvdata.Size = new Size(1144, 393);
             dgvdata.TabIndex = 97;
             // 
-            // FechaRegistro
-            // 
-            FechaRegistro.HeaderText = "Fecha Registro";
-            FechaRegistro.Name = "FechaRegistro";
-            FechaRegistro.ReadOnly = true;
-            // 
-            // TipoDocumento
-            // 
-            TipoDocumento.HeaderText = "Tipo Documento";
-            TipoDocumento.Name = "TipoDocumento";
-            TipoDocumento.ReadOnly = true;
-            // 
-            // NumeroDocumento
-            // 
-            NumeroDocumento.HeaderText = "Numero Documento";
-            NumeroDocumento.Name = "NumeroDocumento";
-            NumeroDocumento.ReadOnly = true;
-            // 
-            // MontoTotal
-            // 
-            MontoTotal.HeaderText = "Monto Total";
-            MontoTotal.Name = "MontoTotal";
-            MontoTotal.ReadOnly = true;
-            // 
-            // UsuarioRegistro
-            // 
-            UsuarioRegistro.HeaderText = "Usuario Registro";
-            UsuarioRegistro.Name = "UsuarioRegistro";
-            UsuarioRegistro.ReadOnly = true;
-            // 
-            // DocumentoCliente
-            // 
-            DocumentoCliente.HeaderText = "Documento Cliente";
-            DocumentoCliente.Name = "DocumentoCliente";
-            DocumentoCliente.ReadOnly = true;
-            // 
-            // NombreCliente
-            // 
-            NombreCliente.HeaderText = "Nombre Cliente";
-            NombreCliente.Name = "NombreCliente";
-            NombreCliente.ReadOnly = true;
-            // 
-            // CodigoProducto
-            // 
-            CodigoProducto.HeaderText = "Codigo Producto";
-            CodigoProducto.Name = "CodigoProducto";
-            CodigoProducto.ReadOnly = true;
-            // 
-            // NombreProducto
-            // 
-            NombreProducto.HeaderText = "Nombre Producto";
-            NombreProducto.Name = "NombreProducto";
-            NombreProducto.ReadOnly = true;
-            // 
-            // Categoria
-            // 
-            Categoria.HeaderText = "Categoria";
-            Categoria.Name = "Categoria";
-            Categoria.ReadOnly = true;
-            // 
-            // PrecioVenta
-            // 
-            PrecioVenta.HeaderText = "Precio Venta";
-            PrecioVenta.Name = "PrecioVenta";
-            PrecioVenta.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            Cantidad.HeaderText = "Cantidad";
-            Cantidad.Name = "Cantidad";
-            Cantidad.ReadOnly = true;
-            // 
-            // SubTotal
-            // 
-            SubTotal.HeaderText = "Subtotal";
-            SubTotal.Name = "SubTotal";
-            SubTotal.ReadOnly = true;
-            // 
             // label4
             // 
             label4.BackColor = Color.White;
@@ -314,6 +236,92 @@
             btnbuscarproveedor.UseVisualStyleBackColor = false;
             btnbuscarproveedor.Click += btnbuscarproveedor_Click_1;
             // 
+            // FechaRegistro
+            // 
+            FechaRegistro.HeaderText = "Fecha Registro";
+            FechaRegistro.Name = "FechaRegistro";
+            FechaRegistro.ReadOnly = true;
+            FechaRegistro.Width = 75;
+            // 
+            // TipoDocumento
+            // 
+            TipoDocumento.HeaderText = "Tipo Documento";
+            TipoDocumento.Name = "TipoDocumento";
+            TipoDocumento.ReadOnly = true;
+            TipoDocumento.Width = 75;
+            // 
+            // NumeroDocumento
+            // 
+            NumeroDocumento.HeaderText = "Numero Documento";
+            NumeroDocumento.Name = "NumeroDocumento";
+            NumeroDocumento.ReadOnly = true;
+            // 
+            // MontoTotal
+            // 
+            MontoTotal.HeaderText = "Monto Total";
+            MontoTotal.Name = "MontoTotal";
+            MontoTotal.ReadOnly = true;
+            MontoTotal.Width = 75;
+            // 
+            // UsuarioRegistro
+            // 
+            UsuarioRegistro.HeaderText = "Usuario Registro";
+            UsuarioRegistro.Name = "UsuarioRegistro";
+            UsuarioRegistro.ReadOnly = true;
+            UsuarioRegistro.Width = 75;
+            // 
+            // DocumentoCliente
+            // 
+            DocumentoCliente.HeaderText = "Documento Cliente";
+            DocumentoCliente.Name = "DocumentoCliente";
+            DocumentoCliente.ReadOnly = true;
+            // 
+            // NombreCliente
+            // 
+            NombreCliente.HeaderText = "Nombre Cliente";
+            NombreCliente.Name = "NombreCliente";
+            NombreCliente.ReadOnly = true;
+            // 
+            // CodigoProducto
+            // 
+            CodigoProducto.HeaderText = "Codigo Producto";
+            CodigoProducto.Name = "CodigoProducto";
+            CodigoProducto.ReadOnly = true;
+            // 
+            // NombreProducto
+            // 
+            NombreProducto.HeaderText = "Nombre Producto";
+            NombreProducto.Name = "NombreProducto";
+            NombreProducto.ReadOnly = true;
+            // 
+            // Categoria
+            // 
+            Categoria.HeaderText = "Categoria";
+            Categoria.Name = "Categoria";
+            Categoria.ReadOnly = true;
+            Categoria.Width = 75;
+            // 
+            // PrecioVenta
+            // 
+            PrecioVenta.HeaderText = "Precio Venta";
+            PrecioVenta.Name = "PrecioVenta";
+            PrecioVenta.ReadOnly = true;
+            PrecioVenta.Width = 75;
+            // 
+            // Cantidad
+            // 
+            Cantidad.HeaderText = "Cantidad";
+            Cantidad.Name = "Cantidad";
+            Cantidad.ReadOnly = true;
+            Cantidad.Width = 75;
+            // 
+            // SubTotal
+            // 
+            SubTotal.HeaderText = "Subtotal";
+            SubTotal.Name = "SubTotal";
+            SubTotal.ReadOnly = true;
+            SubTotal.Width = 75;
+            // 
             // frmReporteVentas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -356,6 +364,7 @@
         private Label label2;
         private Label label1;
         private Label label10;
+        private FontAwesome.Sharp.IconButton btnbuscarproveedor;
         private DataGridViewTextBoxColumn FechaRegistro;
         private DataGridViewTextBoxColumn TipoDocumento;
         private DataGridViewTextBoxColumn NumeroDocumento;
@@ -369,6 +378,5 @@
         private DataGridViewTextBoxColumn PrecioVenta;
         private DataGridViewTextBoxColumn Cantidad;
         private DataGridViewTextBoxColumn SubTotal;
-        private FontAwesome.Sharp.IconButton btnbuscarproveedor;
     }
 }

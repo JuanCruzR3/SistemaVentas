@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
       "projectName": "CapaPresentacion",
-      "projectPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
+      "projectPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
       "packagesPath": "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\obj\\",
+      "outputPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -659,11 +659,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaEntidad\\CapaEntidad.csproj"
             },
-            "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaNegocio\\CapaNegocio.csproj": {
-              "projectPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (2)\\SistemaVentas\\SistemaVentas\\CapaNegocio\\CapaNegocio.csproj"
+            "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaNegocio\\CapaNegocio.csproj"
             }
           }
         }
