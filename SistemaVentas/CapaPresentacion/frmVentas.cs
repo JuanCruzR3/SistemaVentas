@@ -326,7 +326,7 @@ namespace CapaPresentacion
             if (txtdoccliente.Text == "")
             {
                 MessageBox.Show("Debe ingresar el documento del cliente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return; 
+                return;
             }
 
             if (txtnombrecliente.Text == "")
@@ -341,7 +341,7 @@ namespace CapaPresentacion
                 return;
             }
 
-            DataTable detalle_venta = new DataTable(); 
+            DataTable detalle_venta = new DataTable();
 
             detalle_venta.Columns.Add("IdProducto", typeof(int));
             detalle_venta.Columns.Add("PrecioVenta", typeof(decimal));
@@ -355,50 +355,67 @@ namespace CapaPresentacion
                     row.Cells["IdProducto"].Value.ToString(),
                     row.Cells["Precio"].Value.ToString(),
                     row.Cells["Cantidad"].Value.ToString(),
-                    row.Cells["SubTotal"].Value.ToString() 
+                    row.Cells["SubTotal"].Value.ToString()
                 });
             }
 
-            int idcorrelativo = new CN_Venta().ObtenerCorrelativo(); 
+            int idcorrelativo = new CN_Venta().ObtenerCorrelativo();
             string numeroDocumento = string.Format("{0:00000}", idcorrelativo);
-            calcularcambio(); 
+            calcularcambio();
 
             Venta oVenta = new Venta()
             {
                 oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
                 TipoDocumento = ((OpcionCombo)cbotipodocumento.SelectedItem).Texto,
-                NumeroDocumento = numeroDocumento, 
-                DocumentoCliente = txtdoccliente.Text, 
-                NombreCliente = txtnombrecliente.Text, 
-                MontoPago = Convert.ToDecimal(txtpagacon.Text), 
+                NumeroDocumento = numeroDocumento,
+                DocumentoCliente = txtdoccliente.Text,
+                NombreCliente = txtnombrecliente.Text,
+                MontoPago = Convert.ToDecimal(txtpagacon.Text),
                 MontoCambio = Convert.ToDecimal(txtcambio.Text),
                 MontoTotal = Convert.ToDecimal(txttotalapagar.Text),
             };
 
-            string mensaje = string.Empty; 
-            bool respuesta = new CN_Venta().Registrar(oVenta, detalle_venta, out mensaje); 
+            string mensaje = string.Empty;
+            bool respuesta = new CN_Venta().Registrar(oVenta, detalle_venta, out mensaje);
 
             if (respuesta)
             {
-               var result = MessageBox.Show("Numero de venta generado:\n" + numeroDocumento + "\n\n¿Desea copiar al portapapeles?", "Mensaje",
-               MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                var result = MessageBox.Show("Numero de venta generado:\n" + numeroDocumento + "\n\n¿Desea copiar al portapapeles?", "Mensaje",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-                if(result == DialogResult.Yes)
+                if (result == DialogResult.Yes)
                 {
                     Clipboard.SetText(numeroDocumento);
                 }
 
-                txtdoccliente.Text = ""; 
-                txtnombrecliente.Text = ""; 
-                dgvdata.Rows.Clear(); 
-                calcularTotal(); 
-                txtpagacon.Text = ""; 
-                txtcambio.Text = ""; 
+                txtdoccliente.Text = "";
+                txtnombrecliente.Text = "";
+                dgvdata.Rows.Clear();
+                calcularTotal();
+                txtpagacon.Text = "";
+                txtcambio.Text = "";
             }
             else
             {
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnlimpiarbuscador_Click(object sender, EventArgs e)
+        {
+            txtfecha.Text = ""; 
+            cbotipodocumento.SelectedIndex = 0; 
+            txtdoccliente.Text = "";
+            txtnombrecliente.Text = ""; 
+            txtcodproducto.Text = "";
+            txtproducto.Text = "";
+            txtprecio.Text = "";
+            txtstock.Text = "";
+            txtcantidad.Value = 1; 
+            txttotalapagar.Text = "0";
+            txtpagacon.Text = "";
+            txtcambio.Text = "";
+            dgvdata.Rows.Clear(); 
         }
     }
 }

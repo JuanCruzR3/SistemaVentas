@@ -340,5 +340,22 @@ namespace CapaPresentacion
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnlimpiarbuscador_Click(object sender, EventArgs e)
+        {
+            txtfecha.Text = ""; 
+            cbotipodocumento.SelectedIndex = 0; 
+            txtdocproveedor.Text = ""; 
+            txtnombreproveedor.Text = ""; 
+            txtidproveedor.Text = "0";
+            txtcodproducto.Text = "";
+            txtproducto.Text = "";
+            txtidproducto.Text = "0"; 
+            txtpreciocompra.Text = "";
+            txtprecioventa.Text = "";
+            txtcantidad.Value = 1;
+            txttotalapagar.Text = "0.00";
+            dgvdata.Rows.Clear();
+        }
     }
 }
