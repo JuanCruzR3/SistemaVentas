@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -50,6 +51,34 @@ namespace CapaPresentacion
                     item.Estado == true ?1 : 0,
                     item.Estado == true ? "Activo" : "No Activo"
                  });
+            }
+        }
+
+        private void textBoxNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo letras y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxEmail_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            string emailPattern = @"^[a-zA-Z0-9._%+-]+@gmail\.com$";
+            if (!Regex.IsMatch(txtcorreo.Text, emailPattern))
+            {
+                MessageBox.Show("Por favor, ingresa una dirección de correo de Gmail válida.", "Formato de correo inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
             }
         }
 

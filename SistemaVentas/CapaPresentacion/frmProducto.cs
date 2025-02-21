@@ -21,7 +21,6 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
-
         private void frmProducto_Load(object sender, EventArgs e)
         {
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
@@ -72,6 +71,24 @@ namespace CapaPresentacion
                     item.Estado == true ?1 : 0,
                     item.Estado == true ? "Activo" : "No Activo"
                  });
+            }
+        }
+
+        private void textBoxLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo letras y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
 

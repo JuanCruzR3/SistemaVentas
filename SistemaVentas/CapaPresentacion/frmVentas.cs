@@ -42,6 +42,15 @@ namespace CapaPresentacion
 
         }
 
+        private void textBoxNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void btnbuscarproveedor_Click(object sender, EventArgs e)
         {
             using (var modal = new mdCliente())
@@ -403,19 +412,19 @@ namespace CapaPresentacion
 
         private void btnlimpiarbuscador_Click(object sender, EventArgs e)
         {
-            txtfecha.Text = ""; 
-            cbotipodocumento.SelectedIndex = 0; 
+            txtfecha.Text = "";
+            cbotipodocumento.SelectedIndex = 0;
             txtdoccliente.Text = "";
-            txtnombrecliente.Text = ""; 
+            txtnombrecliente.Text = "";
             txtcodproducto.Text = "";
             txtproducto.Text = "";
             txtprecio.Text = "";
             txtstock.Text = "";
-            txtcantidad.Value = 1; 
+            txtcantidad.Value = 1;
             txttotalapagar.Text = "0";
             txtpagacon.Text = "";
             txtcambio.Text = "";
-            dgvdata.Rows.Clear(); 
+            dgvdata.Rows.Clear();
         }
     }
 }

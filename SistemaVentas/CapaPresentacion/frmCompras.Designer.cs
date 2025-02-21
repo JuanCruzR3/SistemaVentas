@@ -341,6 +341,7 @@
             txtcodproducto.Size = new Size(162, 23);
             txtcodproducto.TabIndex = 2;
             txtcodproducto.KeyDown += txtcodproducto_KeyDown;
+            txtcodproducto.KeyPress += textBoxNumeros_KeyPress;
             // 
             // label7
             // 

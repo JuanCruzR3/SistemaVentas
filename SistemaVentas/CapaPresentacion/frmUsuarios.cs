@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CapaPresentacion.Utilidades;
 using CapaEntidad;
 using CapaNegocio;
+using System.Text.RegularExpressions;
 
 namespace CapaPresentacion
 {
@@ -74,9 +75,39 @@ namespace CapaPresentacion
 
         }
 
+        private bool ValidarCampos()
+        {
+            if (string.IsNullOrWhiteSpace(txtid.Text) ||
+                string.IsNullOrWhiteSpace(txtdocumento.Text) ||
+                string.IsNullOrWhiteSpace(txtnombrecompleto.Text) ||
+                string.IsNullOrWhiteSpace(txtcorreo.Text) ||
+                string.IsNullOrWhiteSpace(txtclave.Text) ||
+                cborol.SelectedItem == null ||
+                cboestado.SelectedItem == null)
+            {
+                MessageBox.Show("Todos los campos son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Validar formato de correo electrónico
+            string emailPattern = @"^[a-zA-Z0-9._%+-]+@gmail\.com$";
+            if (!Regex.IsMatch(txtcorreo.Text, emailPattern))
+            {
+                MessageBox.Show("Por favor, ingresa una dirección de correo de Gmail válida.", "Formato de correo inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
+        }
         private void btnguardar_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty;
+
+            // Validar campos antes de continuar
+            if (!ValidarCampos())
+            {
+                return;
+            }
 
             Usuario objusuario = new Usuario()
             {
@@ -96,15 +127,14 @@ namespace CapaPresentacion
                 if (idusuariogenerado != 0)
                 {
                     dgvdata.Rows.Add(new object[] {"", idusuariogenerado, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text,
-             ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
-             ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
-             ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
-             ((OpcionCombo)cboestado.SelectedItem).Texto.ToString(),
-            });
+            ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
+            ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
+            ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
+            ((OpcionCombo)cboestado.SelectedItem).Texto.ToString(),
+        });
 
                     Limpiar();
                 }
-
                 else
                 {
                     MessageBox.Show(mensaje);
@@ -269,6 +299,35 @@ namespace CapaPresentacion
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
+        }
+
+        private void textBoxNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo letras y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        //validacion gmail
+        private void textBoxEmail_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            string emailPattern = @"^[a-zA-Z0-9._%+-]+@gmail\.com$";
+            if (!Regex.IsMatch(txtcorreo.Text, emailPattern))
+            {
+                MessageBox.Show("Por favor, ingresa una dirección de correo de Gmail válida.", "Formato de correo inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -81,6 +81,7 @@
             btnFin.TextAlign = ContentAlignment.MiddleRight;
             btnFin.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnFin.UseVisualStyleBackColor = false;
+            btnFin.Click += btnFin_Click;
             // 
             // btnRestablecer
             // 
@@ -118,6 +119,7 @@
             txtDocumento.Name = "txtDocumento";
             txtDocumento.Size = new Size(204, 23);
             txtDocumento.TabIndex = 15;
+            txtDocumento.KeyPress += textBoxNumeros_KeyPress;
             // 
             // iconPictureBox1
             // 
@@ -171,6 +173,7 @@
             Name = "frmRestablecerClave";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmRestablecerClave";
+            Load += frmRestablecerClave_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);

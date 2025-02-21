@@ -389,6 +389,7 @@
             txtdescripcion.Name = "txtdescripcion";
             txtdescripcion.Size = new Size(183, 23);
             txtdescripcion.TabIndex = 34;
+            txtdescripcion.KeyPress += textBoxLetras_KeyPress;
             // 
             // txtnombre
             // 
@@ -396,6 +397,7 @@
             txtnombre.Name = "txtnombre";
             txtnombre.Size = new Size(183, 23);
             txtnombre.TabIndex = 33;
+            txtnombre.KeyPress += textBoxLetras_KeyPress;
             // 
             // txtcodigo
             // 
@@ -403,6 +405,7 @@
             txtcodigo.Name = "txtcodigo";
             txtcodigo.Size = new Size(183, 23);
             txtcodigo.TabIndex = 32;
+            txtcodigo.KeyPress += textBoxNumeros_KeyPress;
             // 
             // label4
             // 

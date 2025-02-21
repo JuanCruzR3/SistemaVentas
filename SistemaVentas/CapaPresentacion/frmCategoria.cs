@@ -21,6 +21,16 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
+        private void textBoxLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo letras y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+
         private void frmCategoria_Load(object sender, EventArgs e)
         {
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });

@@ -85,6 +85,7 @@
             txtdocumento.Name = "txtdocumento";
             txtdocumento.Size = new Size(204, 23);
             txtdocumento.TabIndex = 3;
+            txtdocumento.KeyPress += textBoxNumeros_KeyPress;
             // 
             // txtclave
             // 
@@ -207,6 +208,7 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

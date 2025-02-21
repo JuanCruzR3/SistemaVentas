@@ -120,6 +120,7 @@
             txtbusqueda.Name = "txtbusqueda";
             txtbusqueda.Size = new Size(181, 23);
             txtbusqueda.TabIndex = 63;
+            txtbusqueda.KeyPress += textBoxNumeros_KeyPress;
             // 
             // label11
             // 

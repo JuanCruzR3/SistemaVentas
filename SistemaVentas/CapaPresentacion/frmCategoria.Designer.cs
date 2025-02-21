@@ -312,6 +312,7 @@
             txtdescripcion.Name = "txtdescripcion";
             txtdescripcion.Size = new Size(183, 23);
             txtdescripcion.TabIndex = 32;
+            txtdescripcion.KeyPress += textBoxLetras_KeyPress;
             // 
             // label2
             // 

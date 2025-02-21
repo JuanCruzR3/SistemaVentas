@@ -27,6 +27,15 @@ namespace CapaPresentacion
             txtbusqueda.Select();
         }
 
+        private void textBoxNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             Venta oVenta = new CN_Venta().ObtenerVenta(txtbusqueda.Text);

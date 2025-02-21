@@ -58,8 +58,22 @@ namespace CapaPresentacion
         {
             frmRestablecerClave form = new frmRestablecerClave();
             form.Show();
-            this.Hide(); 
+            this.Hide();
             form.FormClosing += frm_closing;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números y teclas de control
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

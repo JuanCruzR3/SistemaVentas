@@ -346,6 +346,7 @@
             txtbusqueda.Name = "txtbusqueda";
             txtbusqueda.Size = new Size(138, 23);
             txtbusqueda.TabIndex = 74;
+            txtbusqueda.KeyPress += textBoxNumeros_KeyPress;
             // 
             // btnbuscar
             // 

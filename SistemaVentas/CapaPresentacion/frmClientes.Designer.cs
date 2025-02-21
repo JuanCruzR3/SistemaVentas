@@ -341,6 +341,7 @@
             txttelefono.Name = "txttelefono";
             txttelefono.Size = new Size(183, 23);
             txttelefono.TabIndex = 36;
+            txttelefono.KeyPress += textBoxNumeros_KeyPress;
             // 
             // label5
             // 
@@ -365,6 +366,7 @@
             txtnombrecompleto.Name = "txtnombrecompleto";
             txtnombrecompleto.Size = new Size(183, 23);
             txtnombrecompleto.TabIndex = 33;
+            txtnombrecompleto.KeyPress += textBoxLetras_KeyPress;
             // 
             // txtdocumento
             // 
@@ -372,6 +374,7 @@
             txtdocumento.Name = "txtdocumento";
             txtdocumento.Size = new Size(183, 23);
             txtdocumento.TabIndex = 32;
+            txtdocumento.KeyPress += textBoxNumeros_KeyPress;
             // 
             // label4
             // 
