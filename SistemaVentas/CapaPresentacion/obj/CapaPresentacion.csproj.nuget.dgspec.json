@@ -115,6 +115,10 @@
               "target": "Package",
               "version": "[6.6.0, )"
             },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.68.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.9.0, )"

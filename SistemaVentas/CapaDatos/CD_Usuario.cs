@@ -169,7 +169,50 @@ namespace CapaDatos
             return respuesta;
         }
 
+        public static string ObtenerCorreoPorDocumento(string documento)
+        {
+            string correo = null;
+            string query = "SELECT Correo FROM USUARIO WHERE Documento = @Documento";
 
+            using (SqlConnection conn = new SqlConnection(Conexion.cadena))
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Documento", documento);
+                try
+                {
+                    conn.Open();
+                    correo = cmd.ExecuteScalar()?.ToString();
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de error (si es necesario)
+                    throw new Exception("Error al obtener el correo: " + ex.Message);
+                }
+            }
+            return correo;
+        }
+
+        public static void ActualizarClave(string documento, string nuevaClave)
+        {
+            string updateQuery = "UPDATE USUARIO SET Clave = @Clave WHERE Documento = @Documento";
+
+            using (SqlConnection conn = new SqlConnection(Conexion.cadena))
+            {
+                SqlCommand cmd = new SqlCommand(updateQuery, conn);
+                cmd.Parameters.AddWithValue("@Clave", nuevaClave);
+                cmd.Parameters.AddWithValue("@Documento", documento);
+                try
+                {
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de error (si es necesario)
+                    throw new Exception("Error al actualizar la clave: " + ex.Message);
+                }
+            }
+        }
 
     }
 }

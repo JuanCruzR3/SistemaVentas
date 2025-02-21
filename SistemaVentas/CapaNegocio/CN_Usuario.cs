@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using CapaDatos; 
-using CapaEntidad; 
+using CapaEntidad;
+using Microsoft.Identity.Client;
 
 namespace CapaNegocio
 {
@@ -80,6 +83,56 @@ namespace CapaNegocio
         public bool Eliminar(Usuario obj, out string Mensaje)
         {
             return objcd_usuario.Eliminar(obj, out Mensaje);
+        }
+
+        public static string GenerarNuevaClave()
+        {
+            Random random = new Random();
+            string nuevaClave = "";
+            string caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            for (int i = 0; i < 8; i++)
+            {
+                nuevaClave += caracteres[random.Next(caracteres.Length)];
+            }
+            return nuevaClave;
+        }
+
+        public static void RestablecerClave(string documento)
+        {
+            string correo = CD_Usuario.ObtenerCorreoPorDocumento(documento);
+            if (correo != null)
+            {
+                string nuevaClave = GenerarNuevaClave();
+                CD_Usuario.ActualizarClave(documento, nuevaClave);
+                EnviarCorreo(correo, nuevaClave);
+            }
+            else
+            {
+                throw new Exception("El documento ingresado no existe.");
+            }
+        }
+
+        private static void EnviarCorreo(string correoDestinatario, string nuevaClave)
+        {
+            try
+            {
+                var mensaje = new MailMessage();
+                mensaje.From = new MailAddress("juancruzrodriguez3@gmail.com");  // Correo desde el cual se enviará
+                mensaje.To.Add(correoDestinatario);
+                mensaje.Subject = "Recuperación de Clave";
+                mensaje.Body = $"Hola,\n\nTu nueva clave es: {nuevaClave}\n\nRecuerda cambiarla después de iniciar sesión.\n\nSaludos,\nSoporte Técnico";
+
+                var cliente = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    Credentials = new NetworkCredential("juancruzrodriguez3@gmail.com", "gutv hwxx tmqq yvvj"),
+                    EnableSsl = true
+                };
+                cliente.Send(mensaje);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al enviar el correo: " + ex.Message);
+            }
         }
     }
 }

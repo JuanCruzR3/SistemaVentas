@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bafMdAiA19U0DLeAxyPWbmdYhvs1/MR+hV2VgceGMgj63HFdj/tHDJ1F7I6edckpUaUQSHW0XtNC0PIvnhp0SQ==",
+  "dgSpecHash": "n0Z19nxhGNB3tEgiMtdWHFuzBCf06oolCo/tww+qdGFaZgHyT+LpkKiEeaLc57vq71CrkE7oRX1/k02xI7xmsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Windows 10 R.O.G\\Desktop\\Nueva carpeta (3)\\SistemaVentas\\SistemaVentas\\CapaPresentacion\\CapaPresentacion.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,8 @@
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\fontawesome.sharp\\6.6.0\\fontawesome.sharp.6.6.0.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\itextsharp\\5.5.13.4\\itextsharp.5.5.13.4.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\itextsharp.xmlworker\\5.5.13.4\\itextsharp.xmlworker.5.5.13.4.nupkg.sha512",
+    "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\microsoft.identity.client\\4.68.0\\microsoft.identity.client.4.68.0.nupkg.sha512",
+    "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\rbush\\4.0.0\\rbush.4.0.0.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -20,7 +22,9 @@
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
     "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
-    "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512"
+    "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",
+    "C:\\Users\\Windows 10 R.O.G\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": [
     {

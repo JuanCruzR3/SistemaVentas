@@ -53,5 +53,13 @@ namespace CapaPresentacion
             txtclave.Text = "";
             this.Show();
         }
+
+        private void LLrestablecerclave_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRestablecerClave form = new frmRestablecerClave();
+            form.Show();
+            this.Hide(); 
+            form.FormClosing += frm_closing;
+        }
     }
 }

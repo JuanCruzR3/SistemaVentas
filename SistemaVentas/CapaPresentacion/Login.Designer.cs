@@ -40,6 +40,7 @@
             btncancelar = new FontAwesome.Sharp.IconButton();
             label5 = new Label();
             pictureBox1 = new PictureBox();
+            LLrestablecerclave = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -80,14 +81,14 @@
             // 
             // txtdocumento
             // 
-            txtdocumento.Location = new Point(240, 72);
+            txtdocumento.Location = new Point(212, 48);
             txtdocumento.Name = "txtdocumento";
             txtdocumento.Size = new Size(204, 23);
             txtdocumento.TabIndex = 3;
             // 
             // txtclave
             // 
-            txtclave.Location = new Point(240, 121);
+            txtclave.Location = new Point(212, 97);
             txtclave.Name = "txtclave";
             txtclave.PasswordChar = '*';
             txtclave.Size = new Size(204, 23);
@@ -96,7 +97,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(240, 54);
+            label3.Location = new Point(212, 30);
             label3.Name = "label3";
             label3.Size = new Size(93, 15);
             label3.TabIndex = 5;
@@ -105,7 +106,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(240, 103);
+            label4.Location = new Point(212, 79);
             label4.Name = "label4";
             label4.Size = new Size(67, 15);
             label4.TabIndex = 6;
@@ -173,12 +174,24 @@
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
             // 
+            // LLrestablecerclave
+            // 
+            LLrestablecerclave.AutoSize = true;
+            LLrestablecerclave.Location = new Point(259, 132);
+            LLrestablecerclave.Name = "LLrestablecerclave";
+            LLrestablecerclave.Size = new Size(128, 15);
+            LLrestablecerclave.TabIndex = 11;
+            LLrestablecerclave.TabStop = true;
+            LLrestablecerclave.Text = "¿Olvidó su contraseña?";
+            LLrestablecerclave.LinkClicked += LLrestablecerclave_LinkClicked;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(513, 206);
+            Controls.Add(LLrestablecerclave);
             Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(btncancelar);
@@ -213,5 +226,6 @@
         private FontAwesome.Sharp.IconButton btncancelar;
         private Label label5;
         private PictureBox pictureBox1;
+        private LinkLabel LLrestablecerclave;
     }
 }

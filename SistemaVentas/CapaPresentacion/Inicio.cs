@@ -12,7 +12,6 @@ namespace CapaPresentacion
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
-
         public Inicio(Usuario objusuario = null)
         {
             if (objusuario == null)
@@ -28,6 +27,7 @@ namespace CapaPresentacion
 
         }
 
+        
         private void Inicio_Load(object sender, EventArgs e)
         {
             List<Permiso> ListaPermisos = new CN_Permiso().Listar(usuarioActual.IdUsuario);
@@ -42,10 +42,11 @@ namespace CapaPresentacion
                 }
             }
 
-
-
             lblusuario.Text = usuarioActual.NombreCompleto;
+
         }
+        
+       
 
 
         private void AbrirFormulario(IconMenuItem menu, Form fomulario)
