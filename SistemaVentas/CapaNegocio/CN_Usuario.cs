@@ -120,7 +120,7 @@ namespace CapaNegocio
                 mensaje.From = new MailAddress("juancruzrodriguez3@gmail.com");  // Correo desde el cual se enviará
                 mensaje.To.Add(correoDestinatario);
                 mensaje.Subject = "Recuperación de Clave";
-                mensaje.Body = $"Hola,\n\nTu nueva clave es: {nuevaClave}\n\nRecuerda cambiarla después de iniciar sesión.\n\nSaludos,\nSoporte Técnico";
+                mensaje.Body = $"Hola,\n\nTu nueva clave es: {nuevaClave}\n\nRecuerda pedirle a un administrador que la cambie.\n\nSaludos,\nSoporte Técnico";
 
                 var cliente = new SmtpClient("smtp.gmail.com", 587)
                 {

@@ -126,7 +126,6 @@
             txtnombrecompleto.Name = "txtnombrecompleto";
             txtnombrecompleto.Size = new Size(183, 23);
             txtnombrecompleto.TabIndex = 5;
-            txtnombrecompleto.KeyPress += textBoxLetras_KeyPress;
             // 
             // txtcorreo
             // 
