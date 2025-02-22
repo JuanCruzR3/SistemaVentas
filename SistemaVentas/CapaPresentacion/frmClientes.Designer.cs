@@ -366,7 +366,6 @@
             txtnombrecompleto.Name = "txtnombrecompleto";
             txtnombrecompleto.Size = new Size(183, 23);
             txtnombrecompleto.TabIndex = 33;
-            txtnombrecompleto.KeyPress += textBoxLetras_KeyPress;
             // 
             // txtdocumento
             // 
